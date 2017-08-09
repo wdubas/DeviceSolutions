@@ -1,9 +1,278 @@
 {
   "posts": [
-    {
-      "id": 1,
-      "title": "hello"
+{
+  "ConfigurationData": {
+    "ScheduledEvents": {
+      "MedicationAlerts": {
+        "Morning": "0 0 8 1/1 * ? *",
+        "Afternoon": "0 30 12 1/1 * ? *",
+        "Evening": "0 30 17 1/1 * ? *",
+        "Night": "0 0 21 1/1 * ? *"
+      },
+      "ClearStats": "0 59 23 1/1 * ? *",
+      "FirmwareUpdate": "0 30 23 1/1 * ? *"
+    },
+    "Vibrator": {
+      "MedicationAlert": {
+        "FirstAttempt": {
+          "Action": "pulse",
+          "NumberOfActions": "3",
+          "PostAction": "off"
+        },
+        "SecondAttempt": {
+          "Action": "pulse",
+          "NumberOfActions": "3",
+          "PostAction": "off"
+        },
+        "Ack": {
+          "Action": "off",
+          "NumberOfActions": "0",
+          "PostAction": "off"
+        },
+        "Nack": {
+          "Action": "pulse",
+          "NumberOfActions": "3",
+          "PostAction": "off"
+        }
+      },
+      "EmergencyEvent": {
+        "Action": "pulse",
+        "NumberOfActions": "3",
+        "PostAction": "off"
+      },
+      "EmergencyCancel": {
+        "Action": "off",
+        "NumberOfActions": "0",
+        "PostAction": "off"
+      }
+    },
+    "Audio": {
+      "WelcomeToWellnest": "0",
+      "HowCanIHelpYou": "1",
+      "EmergencyEvent": "2",
+      "EmergencyCancel": "3",
+      "MedicationAlert": {
+        "Morning": {
+          "FirstAttempt": "4",
+          "SecondAttempt": "5",
+          "Ack": "6",
+          "Nack": "7"
+        },
+        "Afternoon": {
+          "FirstAttempt": "8",
+          "SecondAttempt": "9",
+          "Ack": "10",
+          "Nack": "11"
+        },
+        "Evening": {
+          "FirstAttempt": "12",
+          "SecondAttempt": "13",
+          "Ack": "14",
+          "Nack": "15"
+        },
+        "Night": {
+          "FirstAttempt": "16",
+          "SecondAttempt": "17",
+          "Ack": "18",
+          "Nack": "19"
+        }
+      },
+      "BatteryAlert": "20",
+      "DeviceDocked": "21",
+      "DeviceUndocked": "22"
+    },
+    "LED": {
+      "EmergencyIcon": {
+        "EmergencyEvent": {
+          "Color": "red",
+          "Action": "flash",
+          "NumberOfActions": "3",
+          "PostAction": "on"
+        }
+      },
+      "MedicationIcon": {
+        "MedicationAlert": {
+          "FirstAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "SecondAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Ack": {
+            "Color": "green",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "off"
+          },
+          "Nack": {
+            "Color": "red",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "off"
+          }
+        }
+      },
+      "Morning": {
+        "MedicationAlert": {
+          "FirstAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "SecondAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Ack": {
+            "Color": "green",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Nack": {
+            "Color": "red",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          }
+        }
+      },
+      "Afternoon": {
+        "MedicationAlert": {
+          "FirstAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "SecondAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Ack": {
+            "Color": "green",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Nack": {
+            "Color": "red",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          }
+        }
+      },
+      "Evening": {
+        "MedicationAlert": {
+          "FirstAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "SecondAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Ack": {
+            "Color": "green",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Nack": {
+            "Color": "red",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          }
+        }
+      },
+      "Night": {
+        "MedicationAlert": {
+          "FirstAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "SecondAttempt": {
+            "Color": "blue",
+            "Action": "flash",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Ack": {
+            "Color": "green",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          },
+          "Nack": {
+            "Color": "red",
+            "Action": "on",
+            "NumberOfActions": "3",
+            "PostAction": "on"
+          }
+        }
+      },
+      "Ring": {
+        "EmergencyEvent": {
+          "Color": "red",
+          "Action": "on",
+          "NumberOfActions": "1",
+          "PostAction": "off"
+        },
+        "MedicationAlert": {
+          "FirstAttempt": {
+            "Color": "blue",
+            "Action": "on",
+            "NumberOfActions": "1",
+            "PostAction": "off"
+          },
+          "SecondAttempt": {
+            "Color": "blue",
+            "Action": "on",
+            "NumberOfActions": "1",
+            "PostAction": "off"
+          },
+          "Ack": {
+            "Color": "green",
+            "Action": "on",
+            "NumberOfActions": "1",
+            "PostAction": "off"
+          },
+          "Nack": {
+            "Color": "red",
+            "Action": "on",
+            "NumberOfActions": "1",
+            "PostAction": "off"
+          }
+        },
+        "AudioPlayback": {
+          "Color": "blue",
+          "Action": "pulse",
+          "NumberOfActions": "0",
+          "PostAction": "off"
+        }
+      }
     }
+  }
+}
   ],
   "profile": {
     "name": "typicode"
